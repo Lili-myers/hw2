@@ -2,29 +2,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose a Couch!</title>
+    <title>Lili's Couch</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="mt:p-16 p-4">
+        <div class="flex">
+          <h1 class="w-1/2 font-bold">
+            <a href="index.html">
+              <span>Go</span>
+              <span class="text-indigo-600">Home</span>
+            </a>
+          </h1>
+      
+          <p class="w-1/2 text-right font-bold">
+            <a href="couchcontenders.html">
+                <span>Go to</span>
+                <span class="text-indigo-600">Couch Contenders</span>
+          </p>
+        </div>
+    <div>
+        <h1 class="text-center m-8 uppercase font-bold text-2xl text-indigo-600">Lili's Couch Submissions</h1>
+    </div>
+    <div class="m-8">
+        <h1 class="text-3xl font-bold text-center">Recommend the perfect couch for Lili!</h1>
+        <div>
+        </div>
+    </div>
 
-    <h1>Submit your suggestion!</h1>
-    <h2><em>Submit feedback here on the best couch!</em></h2>
-    <ul>
-        <li>Need to go back? Go <a href="index.html">home.</a></li>
-        <li>Want to learn about the goals? Go to <a href="goals.html">goals.</a></li>
-        <li>Want to learn about which couches are in the running? Go to <a href="couchcontenders.html">couch contenders.</a></li>
-    </ul>
-
-    <form>
-        <label for="name">What is your name?</label>
-        <input type="text" id="name" name="name">
-
-        <lable for="store-name">What is the name of the store?</lable>
-        <input type="text" id="store-name" name="store-name">
-
-        <button>Submit form!</button>
-    </form> 
-
-
+    <div class="m-8">
+        <h1 class="text-2xl font-bold text-center">Submit your recommendation here:</h1>
+    ​
+        <form netlify class="mx-auto mt-8 w-64">
+          <label class="block mt-4 font-bold" for="name">What is your name?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="name" name="name">
+    
+          <label class="block mt-4 font-bold" for="couch-store">What store is the couch from?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="couch-store" name="couch-store">
+  
+          <label class="block mt-4 font-bold" for="couch-name">What is the couch called?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="couch-name" name="couch-name">
+    
+          <button class="block mt-4 text-white bg-indigo-500 rounded px-4 py-2">Submit form!</button>
+        </form>
+      </div>
     
 </body>
 </html>
